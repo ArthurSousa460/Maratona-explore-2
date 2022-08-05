@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 body.dark{
     --bg-color: #00082f;
     --text-color: #ffffff;
