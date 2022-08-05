@@ -1,35 +1,36 @@
+:root{
+    --bg-color:#255c69;
+    --text-color: rgba(255, 255, 255, 0.9);
+    --hover-color:#133453;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root{
-    --bg-color: #00082f;
-    --text-color: #ffffff;
-}
-
-a{
-    text-decoration: none;
-}
-
-body{
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Roboto Slab' sans-serif;
+    font-family: 'Roboto' sans-serif;
 }
 
 .container{
-    text-align: center;
+    margin: 30px auto;
     width: 300px;
-    margin: 60px auto 0px;
+    height: 100%;
 }
 
-img{
+.perfil-image-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    text-align: center;
+}
+
+.perfil-image-box .avatar{
     width: 100%;
-}
-
-img.avatar{
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -37,27 +38,25 @@ img.avatar{
     padding: 3.7px;
 }
 
-h1{
+.title-name{
     font-size: 32px;
     margin-top: 24px;
     margin-bottom: 8px;
 }
 
-p{
+.perfil-name{
     font-family: 'Roboto Mono', monospace;
     font-weight: 400; 
     opacity: 0.8;
     font-size: 18px;
 }
 
-ul{
+.list-link{
     list-style: none;
     margin: 48px 0px;
 }
-
-
-
-ul li a {
+.list-link a {
+    text-decoration: none;
     height: 53px;
     display: flex;
     align-items: center;
@@ -68,16 +67,17 @@ ul li a {
     font-size: 14px;
     border-radius: 6px;
 
-    transition: background 400ms;
+    transition: background 500ms;
 }
 
-ul li a:hover {
-    background:#364FC7;
+.list-link a:hover {
+    background: var(--hover-color);
+    transform: scale(1.03);
 }
 
-footer{
-    color: #ffffff;
+.footer{
+    text-align: center;
     font-weight: 500;
     font-size: 12px;
-    opacity: 0.6;
+    opacity: 0.7;
 }
